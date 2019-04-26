@@ -9,27 +9,39 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_weight="1"
-        android:gravity="center"
-        android:orientation="horizontal">
+        android:gravity="bottom|center"
+        android:orientation="horizontal"
+        android:visibility="visible">
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="75dp"
             android:layout_weight="1"
-            android:text="      Where do you want to go? "
+            android:text="      Real Time Stock Price"
             android:textAllCaps="true"
             android:textSize="24sp"
             android:textStyle="bold" />
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="432dp"
-        android:layout_height="541dp"
-        android:orientation="horizontal"/>
+        android:layout_width="346dp"
+        android:layout_height="449dp"
+        android:gravity="top"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/textInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Company Name"
+            android:inputType="textPersonName" />
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
